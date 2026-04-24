@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="60dp"
+        >
+
+        <TextView
+            android:text="Nouveau membre"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#6A1B9A"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Nom :"
+            style="@style/libelle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/editNom"
+            style="@style/champSaisie"
+            android:hint="Entrez le nom"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:text="Prénom :"
+            style="@style/libelle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/editPrenom"
+            style="@style/champSaisie"
+            android:hint="Entrez le prénom"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:text="Ville :"
+            style="@style/libelle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinnerVille"
+            android:entries="@array/villes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:text="Genre :"
+            style="@style/libelle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioGroup
+            android:id="@+id/radioGenre"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <RadioButton
+                android:id="@+id/radioHomme"
+                android:text="Homme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/radioFemme"
+                android:text="Femme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnAjouter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer"
+            android:backgroundTint="#FF69B4"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/tvReponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#333333"
+            android:textSize="14sp"/>
+        <Button
+            android:id="@+id/btnVoirMembres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voir les membres"/>
+
+    </LinearLayout>
+</ScrollView>
