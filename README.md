@@ -65,13 +65,10 @@ Avant de tester depuis Android, vérifier les WS avec ARC :
 | Test | URL | Méthode | Paramètres |
 |---|---|---|---|
 | Ajouter un membre | `http://localhost/projet/ws/ajouterMembre.php` | POST | `nom`, `prenom`, `ville`, `genre` |
-
-
 | Lister les membres | `http://localhost/projet/ws/listerMembres.php` | GET | — |
+<img width="1280" height="636" alt="image" src="https://github.com/user-attachments/assets/7d5889f7-8f4f-44bd-9380-8c981cfe995f" />
 <img width="1280" height="636" alt="image" src="https://github.com/user-attachments/assets/d9514ee7-0a37-4f9e-bc65-f634ae58cc4e" />
 
-
----
 ---
 
 ## Partie 2 — Web Service PHP
